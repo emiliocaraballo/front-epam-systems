@@ -1,0 +1,29 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "nuxt.config.ts",
+    "app.vue",
+    "components",
+    "composables",
+    "layouts",
+    "middleware",
+    "pages",
+    "plugins",
+    "server",
+    "utils",
+    "types",
+    "types/vue-shim.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".output",
+    "dist"
+  ]
+}

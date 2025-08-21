@@ -1,0 +1,30 @@
+// assets/styles/_buttons.scss
+@use './_variables.scss' as *;
+@use "sass:color";
+
+.save-button {
+  width: 100%;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover:not(:disabled) {
+    background: color.adjust($primary-color, $lightness: -10%);
+    transform: translateY(-2px);
+  }
+  
+  &:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
