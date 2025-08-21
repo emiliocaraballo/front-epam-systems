@@ -8,6 +8,13 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "prod": "node .output/server/index.mjs",
+    "pm2:dev": "pm2 start ecosystem.config.cjs --only frontend-dev",
+    "pm2:prod": "pm2 start ecosystem.config.cjs --only frontend-prod",
+    "pm2:stop": "pm2 stop all",
+    "pm2:restart": "pm2 restart all",
+    "pm2:logs": "pm2 logs",
+    "pm2:status": "pm2 status",
+    "pm2:delete": "pm2 delete all",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {

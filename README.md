@@ -83,6 +83,33 @@ npm run preview
 npm run prod
 ```
 
+### PM2 - Gestión de Procesos
+
+#### Instalación de PM2
+```bash
+npm install -g pm2   # Instalar PM2 globalmente
+```
+
+#### Comandos PM2
+```bash
+# Desarrollo con PM2
+npm run pm2:dev      # Iniciar en modo desarrollo
+npm run pm2:prod     # Iniciar en modo producción
+
+# Gestión de procesos
+npm run pm2:stop     # Detener todos los procesos
+npm run pm2:restart  # Reiniciar todos los procesos
+npm run pm2:status   # Ver estado de los procesos
+npm run pm2:logs     # Ver logs en tiempo real
+npm run pm2:delete   # Eliminar todos los procesos
+
+# Comandos directos de PM2
+pm2 start ecosystem.config.cjs --only frontend-dev    # Solo desarrollo
+pm2 start ecosystem.config.cjs --only frontend-prod   # Solo producción
+pm2 start ecosystem.config.cjs                        # Ambos modos
+pm2 monit                                           # Monitor en tiempo real
+```
+
 ### Otros comandos
 
 ```bash
