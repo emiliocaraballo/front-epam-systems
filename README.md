@@ -316,7 +316,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 **Emilio Caraballo**
 - GitHub: [@emiliocaraballo](https://github.com/emiliocaraballo)
-- Email: emiliocaraballo9812@gmail.com
+- Email: emiliocaraballo9810@gmail.com
 
 ## 🙏 Agradecimientos
 
